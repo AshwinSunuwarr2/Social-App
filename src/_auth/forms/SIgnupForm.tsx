@@ -38,10 +38,10 @@ const SIgnupForm = () => {
     },
   });
 
-  const { mutateAsync: createUserAccount, isLoading: isCreatingAccount } =
+  const { mutateAsync: createUserAccount, isPending: isCreatingAccount } =
     useCreateUserAccount();
 
-  const { mutateAsync: signInAccount, isLoading: isSigningIn } =
+  const { mutateAsync: signInAccount, isPending: isSigningIn } =
     useSignInAccount();
 
   // 2. Define a submit handler.
