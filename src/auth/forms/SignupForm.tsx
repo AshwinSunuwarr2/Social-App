@@ -12,7 +12,6 @@ import Loader from "@/components/shared/Loader"
 import { Link, useNavigate } from "react-router-dom"
 import { useCreateUserAccount, useSigninAccount } from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
-import { error } from "console"
 
 const SignupForm = () => {
   const { toast } = useToast();
