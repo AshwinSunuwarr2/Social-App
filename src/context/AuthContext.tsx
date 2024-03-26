@@ -70,7 +70,8 @@ export const INITIAL_USER = {
       // cookieFallback === "[]" ||
       // cookieFallback === undefined
       if (
-        localStorage.getItem('cookieFallback') === null
+        localStorage.getItem('cookieFallback') === null ||
+        localStorage.getItem('cookieFallback') === '[]'
       ) {
         navigate("/sign-in");
       }

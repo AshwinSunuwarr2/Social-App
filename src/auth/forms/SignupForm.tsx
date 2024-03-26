@@ -38,7 +38,6 @@ const SignupForm = () => {
     const newUser = await createUserAccount(values)
     
     if(!newUser) {
-      console.log("error", error)
       return toast({
         title: "Sign up failed.",
         description: "Something went wrong, Please try again.",
