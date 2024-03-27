@@ -6,8 +6,8 @@ import { NavLink, useLocation } from "react-router-dom";
 const Bottombar = () => {
   const { pathname } = useLocation();
   return (
-    <section className="botton-bar">
-      <ul className="flex flex-row justify-around gap-6">
+    <section className="bottom-bar">
+     
       {bottombarLinks.map((link: INavLink) => {
         const isActive = pathname === link.route;
         return (
@@ -32,7 +32,7 @@ const Bottombar = () => {
       
       );
     })}
-    </ul>
+    
     </section>
   );
 };
