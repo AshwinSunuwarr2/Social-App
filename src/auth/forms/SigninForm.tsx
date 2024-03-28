@@ -50,6 +50,8 @@ const SigninForm = () => {
 
     if(!isLoggedIn) {
       form.reset()
+      console.log("logining")
+
       navigate("/");
 
     } else{
@@ -83,7 +85,7 @@ const SigninForm = () => {
                 <Input type="text" className="shad-input" {...field} />
               </FormControl>
             
-              <FormMessage />
+              <FormMessage className="shad-form_message" />
             </FormItem>
           )}
         />
@@ -95,10 +97,10 @@ const SigninForm = () => {
             <FormItem>
               <FormLabel>Password</FormLabel>
               <FormControl>
-                <Input type="text" className="shad-input" {...field} />
+                <Input type="password" className="shad-input" {...field} />
               </FormControl>
             
-              <FormMessage />
+              <FormMessage className="shad-form_message" />
             </FormItem>
           )}
         />
